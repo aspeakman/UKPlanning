@@ -1,0 +1,3 @@
+v1.0, 2017-07-14 -- Initial release with full UK coverage (433 scrapers)
+v1.1, 2017-07-15 -- Moved all scrapers based on 'requests' to a new folder
+v1.2, 2017-07-16 -- Upgraded mechanize to latest v1.3.5

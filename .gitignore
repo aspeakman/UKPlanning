@@ -1,0 +1,16 @@
+*.pyc
+*.pyo
+*#
+*~
+venv*/
+logs/
+DLLs/
+dist/
+build/
+*.egg
+*.egg-info
+*.sqlite
+*.lnk
+*.1
+*.2
+*.log

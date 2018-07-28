@@ -1,0 +1,24 @@
+Basic installation (for standalone testing) - steps are as follows:
+
+First time:
+    Install python 2.7.13
+    Open a command shell
+    Run 'git clone https://aspeakman@bitbucket.org/aspeakman/ukplanning.git UKPlanning'
+    Or if you just want a specific version then substitute for 'Vn.n.n' as the chose version number below
+    Run 'git clone -b 'Vn.n.n' --single-branch https://aspeakman@bitbucket.org/aspeakman/ukplanning.git UKPlanning' 
+    Change directory to 'UKPlanning'
+    Run 'pip install virtualenv'
+    Run 'virtualenv venv'
+    Enter the 'venv' virtual environment by running 'scripts/runsh' or 'scripts/runcmd.bat'
+    Once you see the (venv) prompt
+    Run 'pip install -r ../requirements.txt' (once only step to install required libraries)
+    Try 'python run.py -h'
+
+Subsequent times:
+    Open a command shell
+    Change directory to 'UKPlanning'
+    Enter the 'venv' virtual environment by running 'scripts/runsh' or 'scripts/runcmd.bat'
+    Once you see the (venv) prompt
+    Try 'python run.py -h'
+
+

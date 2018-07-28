@@ -1,0 +1,3 @@
+cd /share/Andrew/Projects/UKPlanning
+source venvlx/bin/activate
+cd ukplanning

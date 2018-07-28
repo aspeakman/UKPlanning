@@ -1,0 +1,10 @@
+# Note works with python 2.7 - version >= 2.7.12
+BeautifulSoup>=3.2.1
+mechanize>=0.3.5
+python-dateutil==2.2
+requests[security]>=2.9.1 # after sudo apt-get install python-dev libffi-dev libssl-dev on Ubuntu
+cryptography>=1.2.1
+six>=1.7.3
+lxml==3.3.5
+
+

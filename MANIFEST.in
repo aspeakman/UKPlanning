@@ -1,0 +1,3 @@
+include requirements.txt README.md
+recursive-include ukplanning *.txt *.py *.csv
+
