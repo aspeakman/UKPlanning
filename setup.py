@@ -3,8 +3,10 @@ try:
     from setuptools import setup, find_packages
 except ImportError:
     from distutils.core import setup
-from pip.req import parse_requirements
-import pip
+try: # for pip >= 10
+    from pip._internal import req, download
+except ImportError: # for pip <= 9.0.3
+    from pip import req, download
 import os
 import re
 
@@ -14,8 +16,8 @@ details = 'Scrapers for UK planning authorities'
 
 required = [i.strip() for i in open("requirements.txt").readlines()]
 
-# parse_requirements() returns generator of pip.req.InstallRequirement objects
-install_reqs = parse_requirements("requirements.txt", session=pip.download.PipSession())
+# parse_requirements() returns generator of InstallRequirement objects
+install_reqs = req.parse_requirements("requirements.txt", session=download.PipSession())
 
 # reqs is a list of requirement
 # e.g. ['django==1.5.1', 'mezzanine==1.4.6']
